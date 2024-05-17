@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { MaisonsRecord } from '@/pocketbase-types';
 import MaisonCard from '@/components/MaisonCard.vue';
-import { pb } from '@/backend';
+import { allMaisonsSorted, pb } from '@/backend';
 import { allMaisonsFavori } from '@/backend'
-const maisonsListe = await allMaisonsFavori()
+const maisonsListe = await allMaisonsSorted()
 
 </script>
 
